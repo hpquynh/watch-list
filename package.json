@@ -7,6 +7,7 @@
     "lint:code": "eslint --ext ts,tsx src"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.4.0",
     "@types/node": "^14.14.22",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
