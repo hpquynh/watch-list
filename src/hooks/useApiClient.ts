@@ -1,6 +1,6 @@
-import { useDependencyInjectionContainer } from '../components/DependencyInjection'
-import { AxiosInstance } from 'axios'
+import { AxiosInstance } from 'axios';
+import { apiClient } from '~/src/services/service';
 
 export const useApiClient = (): AxiosInstance => {
-  return useDependencyInjectionContainer().apiClient
+  return apiClient;
 }

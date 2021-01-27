@@ -3,15 +3,15 @@ import Input from 'antd/lib/input';
 import Space from 'antd/lib/space';
 import './index.scss';
 
-const { Search } = Input;
-const onSearch = value => console.log(value);
+const {Search} = Input;
 
 export const SearchBox = (props: SearchBoxProps) => {
-    const { placeholder } = props;
-    return  <Space direction="vertical">
-        <Search placeholder={placeholder} size="large" allowClear onSearch={onSearch} enterButton />
+    const {placeholder, onChange} = props;
+    return <Space direction="vertical">
+        <Search placeholder={placeholder} size="large" allowClear onSearch={onChange} enterButton/>
     </Space>;
 };
 export type SearchBoxProps = {
-    placeholder: string
+    placeholder: string,
+    onChange: (value: string) => void
 }

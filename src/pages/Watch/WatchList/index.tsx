@@ -1,19 +1,17 @@
 import React from 'react';
-import {SearchBox} from '../../../components/SearchBox';
-import {WatchCard} from '../../../components/WatchCard';
-import {DependencyInjection}  from '../../../components/DependencyInjection';
-import {useWatchList} from './useWatchList'
+import {SearchBox} from '~/src/components/SearchBox';
+import {WatchCard} from '~/src/components/WatchCard';
+import {useWatchList} from '~/src/pages/Watch/WatchList/useWatchList'
 import './index.scss';
 
 export const WatchList = () => {
     const ct = useWatchList();
-    return <DependencyInjection>
-        <div>
-            <SearchBox placeholder="Type a name..." />
-            <div className="watch-list">
-            <WatchCard loading={true}/>
-          <WatchCard loading={false}/>
+    return <section>
+        <SearchBox placeholder="Type a name..." onChange={(value) => ct.handleSearch(value.toString())}/>
+        <div className="watch-list">
+            {ct?.list?.result?.map((item, index) => (
+                <WatchCard key={index} loading={ct?.list?.loading} data={item}/>
+            ))}
         </div>
-        </div>
-    </DependencyInjection>;
+    </section>;
 };

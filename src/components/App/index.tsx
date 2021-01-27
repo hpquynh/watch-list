@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 import Layout from 'antd/lib/layout';
 import Menu from 'antd/lib/menu';
-import { Routes } from '../Routes';
+import { Routes } from './Routes';
 import 'antd/dist/antd.css';
 import './index.scss';
 
