@@ -12,7 +12,7 @@ const {Header, Content, Footer} = Layout;
 
 export const App: React.FC = (): ReactElement => {
     const [date , setDate] = useState();
-    const getYear = () =>  setDate(new Date().getFullYear())
+    const getYear = () =>  setDate(new Date().getFullYear());
 
     useEffect(() => {
         getYear();

@@ -9,8 +9,8 @@ export const WatchList = () => {
     return <section>
         <SearchBox placeholder="Type a name..." onChange={(value) => ct.handleSearch(value.toString())}/>
         <div className="watch-list">
-            {ct?.list?.result?.map((item, index) => (
-                <WatchCard key={index} loading={ct?.list?.loading} data={item}/>
+            {ct?.payload?.result?.map((item, index) => (
+                <WatchCard key={index} loading={ct?.payload?.loading} data={item}/>
             ))}
         </div>
     </section>;
