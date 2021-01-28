@@ -1,4 +1,3 @@
-
 export type WatchListQueryParams = {
- keyword?:string
+  keyword?: string
 }

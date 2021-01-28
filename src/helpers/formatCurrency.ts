@@ -1,3 +1,4 @@
 export const formatCurrency = (num: number): string => {
-    return '$' + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+  const fractionDigits = 2
+  return "$" + num.toFixed(fractionDigits).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
 }

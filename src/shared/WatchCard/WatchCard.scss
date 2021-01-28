@@ -1,8 +1,8 @@
-@import './src/assets/styles/dimension-variables';
+@import "./src/assets/styles/dimension-variables";
 
-.watch{
+.watch {
   user-select: none;
-  &__header{
+  &__header {
     display: flex;
     flex-flow: row;
     align-items: center;

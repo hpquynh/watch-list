@@ -1,2 +1,2 @@
-export {WatchList} from './WatchList/WatchList';
-export {WatchDetail} from './WatchDetail/WatchDetail';
+export { WatchList } from "./WatchList/WatchList"
+export { WatchDetail } from "./WatchDetail/WatchDetail"

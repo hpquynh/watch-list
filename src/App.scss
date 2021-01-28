@@ -1,10 +1,13 @@
 @import "./src/assets/styles/variables";
 
-body, #root, .layout, .site-layout-content{
+body,
+#root,
+.layout,
+.siteLayoutContent {
   height: 100%;
 }
 
-.site-layout-content {
+.siteLayoutContent {
   min-height: $mh-main-content;
   padding: $sp-2;
   background: $color-white;

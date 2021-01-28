@@ -5,7 +5,11 @@
     "useJSXTextNode": true
   },
   "extends": [
+    "eslint:recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
   "plugins": [
@@ -14,6 +18,16 @@
     "@typescript-eslint"
   ],
   "settings": {
-    "react": { "version": "detect" }
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-console": "warn",
+    "require-await": "warn",
+    "react/jsx-space-before-closing": "warn",
+    "react/jsx-tag-spacing": "warn",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
   }
 }
