@@ -6,7 +6,7 @@ import Layout from 'antd/lib/layout';
 import Menu from 'antd/lib/menu';
 import { Routes } from './Routes';
 import 'antd/dist/antd.css';
-import './index.scss';
+import './App.scss';
 
 const {Header, Content, Footer} = Layout;
 

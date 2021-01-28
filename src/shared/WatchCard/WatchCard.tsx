@@ -4,11 +4,11 @@ import Skeleton from 'antd/lib/skeleton';
 import Image from 'antd/lib/image';
 import Tag from 'antd/lib/tag';
 import dayjs from 'dayjs';
-import {Watch} from '~/src/services/types/Watch';
+import {Watch} from '~/src/types/Watch';
 import {Constants} from '~/src/configs/constants';
 import {formatCurrency} from '~/src/helpers/formatCurrency';
 import {generateColor} from '~/src/helpers/generateColor';
-import './index.scss';
+import './WatchCard.scss';
 
 const cardStyle = {
     width: '300px',

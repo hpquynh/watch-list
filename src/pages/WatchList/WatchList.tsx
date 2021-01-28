@@ -1,8 +1,7 @@
-import React, { ReactElement } from 'react';
-import {SearchBox} from '~/src/components/SearchBox';
-import {WatchCard} from '~/src/components/WatchCard';
-import {useWatchList} from '~/src/pages/Watch/WatchList/useWatchList'
-import './index.scss';
+import React, {ReactElement} from 'react';
+import {SearchBox, WatchCard} from '~/src/shared';
+import {useWatchList} from '~/src/pages/WatchList/hooks/useWatchList'
+import './WatchList.scss';
 
 export const WatchList = (): ReactElement => {
     const ct = useWatchList();

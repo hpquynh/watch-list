@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import Input from 'antd/lib/input';
 import Space from 'antd/lib/space';
-import './index.scss';
+import './SearchBox.scss';
 
 const {Search} = Input;
 
