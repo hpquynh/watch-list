@@ -10,7 +10,7 @@ import './index.scss';
 
 const {Header, Content, Footer} = Layout;
 
-export const App: React.FC = (): ReactElement => {
+export const App = (): ReactElement => {
     const [date , setDate] = useState();
     const getYear = () =>  setDate(new Date().getFullYear());
 

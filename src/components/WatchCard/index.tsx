@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import Card from 'antd/lib/card';
 import Skeleton from 'antd/lib/skeleton';
 import Image from 'antd/lib/image';
@@ -13,8 +13,9 @@ import './index.scss';
 const cardStyle = {
     width: '300px',
     margin: '8px'
-}
-export const WatchCard = (props: WatchInfoProps) => {
+};
+
+export const WatchCard = (props: WatchInfoProps): ReactElement => {
     const {loading, data} = props;
     const { Meta } = Card;
     return (<Card style={cardStyle}

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import {SearchBox} from '~/src/components/SearchBox';
 import {WatchCard} from '~/src/components/WatchCard';
 import {useWatchList} from '~/src/pages/Watch/WatchList/useWatchList'
 import './index.scss';
 
-export const WatchList = () => {
+export const WatchList = (): ReactElement => {
     const ct = useWatchList();
     return <section>
         <SearchBox placeholder="Type a name..." onChange={(value) => ct.handleSearch(value.toString())}/>
