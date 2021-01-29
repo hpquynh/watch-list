@@ -13,7 +13,7 @@ Watch collection application written in React and TypeScript.
 **- Technologies:**
 
  1. React
- 2. ypeScript
+ 2. TypeScript
  3. Hooks
  4. Antd UI (https://ant.design/components/overview/)
  5. Parcel (https://parceljs.org/)
