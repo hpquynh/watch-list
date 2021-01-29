@@ -12,11 +12,7 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
-  "plugins": [
-    "react",
-    "react-hooks",
-    "@typescript-eslint"
-  ],
+  "plugins": ["react", "react-hooks", "@typescript-eslint"],
   "settings": {
     "react": {
       "version": "detect"
@@ -26,6 +22,7 @@
     "no-console": "warn",
     "require-await": "warn",
     "react/jsx-space-before-closing": "warn",
+    "@typescript-eslint/ban-ts-comment": "warn",
     "react/jsx-tag-spacing": "warn",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error"

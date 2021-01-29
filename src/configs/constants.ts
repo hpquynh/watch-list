@@ -17,9 +17,10 @@ export const Constants = {
     "#97ce84",
   ],
   APIS: {
-    SEARCH_WATCH: 'searchWatch',
-    CREATE_WATCH: 'createWatch',
-    UPDATE_WATCH: 'updateWatch',
-    DELETE_WATCH: 'deleteWatch'
-  }
+    SEARCH_WATCHES: "searchWatches",
+    CREATE_WATCH: "createWatch",
+    UPDATE_WATCH: "updateWatch",
+    DELETE_WATCH: "deleteWatch",
+    FIND_WATCH_BY_ID: "findWatchById",
+  },
 }

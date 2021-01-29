@@ -13,7 +13,8 @@ body,
   background: $color-white;
 }
 
-.loading, .empty {
+.loading,
+.empty {
   display: block;
   text-align: center;
   padding: $sp-1;

@@ -8,6 +8,7 @@ import { Constants } from "~/src/configs/constants"
 import { formatCurrency } from "~/src/helpers/formatCurrency"
 import { generateColor } from "~/src/helpers/generateColor"
 import "./WatchCard.scss"
+import { Link, useLocation } from "react-router-dom"
 
 const cardStyle = {
   width: "300px",
@@ -17,6 +18,8 @@ const cardStyle = {
 export const WatchCard: React.FC<WatchInfoProps> = (props: WatchInfoProps): ReactElement => {
   const { data } = props
   const { Meta } = Card
+  const location = useLocation()
+
   return (
     <Card
       style={cardStyle}
@@ -26,6 +29,13 @@ export const WatchCard: React.FC<WatchInfoProps> = (props: WatchInfoProps): Reac
     >
       {data && (
         <div>
+          <Link
+            className="watch__link"
+            to={{
+              pathname: `/detail/${data.id}`,
+              state: { from: location },
+            }}
+          ></Link>
           <div className="watch__header">
             <Tag color={generateColor(data.brand)}>{data.brand}</Tag> <Meta title={data.name} />
           </div>

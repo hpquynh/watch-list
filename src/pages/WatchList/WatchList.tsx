@@ -15,9 +15,7 @@ export const WatchList: React.FC = (): ReactElement => {
         onChange={(value) => handleSearch(value.toString())}
       />
       <div className="watchList">
-        {data && data?.map((item, index) => (
-          <WatchCard key={index} data={item} />
-        ))}
+        {data && data?.map((item, index) => <WatchCard key={index} data={item} />)}
         {isLoading && (
           <div className="loading">
             <Spin size="large" />

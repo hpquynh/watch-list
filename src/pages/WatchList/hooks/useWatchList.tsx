@@ -21,7 +21,7 @@ export const useWatchList = (): [
     setKeyword(value)
   }
   const { isLoading, data, error } = useQuery(
-    [Constants.APIS.SEARCH_WATCH, query.keyword],
+    [Constants.APIS.SEARCH_WATCHES, query.keyword],
     async () => await searchWatches(query.keyword)
   )
   if (isError(error)) {

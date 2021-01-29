@@ -9,3 +9,9 @@ export const searchWatches = async (req = ""): Promise<Watch[] | undefined> => {
   )
   return res.data
 }
+
+export const findById = async (id: string): Promise<Watch | undefined> => {
+  const api: AxiosInstance = apiClient
+  const res: AxiosResponse<Watch> = await api.get<Watch>(`/watches/${id}`)
+  return res.data
+}

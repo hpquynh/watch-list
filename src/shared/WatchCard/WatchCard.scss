@@ -2,10 +2,29 @@
 
 .watch {
   user-select: none;
+  white-space: normal;
+  &__link {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: $sp-3;
+    &:focus,
+    &:active,
+    &:visited,
+    &:hover {
+      color: initial;
+    }
+  }
   &__header {
     display: flex;
     flex-flow: row;
     align-items: center;
     margin-bottom: $sp-0;
+    .ant-card-meta-detail {
+      white-space: normal;
+    }
   }
 }
