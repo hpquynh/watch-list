@@ -5,6 +5,8 @@
 ```shell
 yarn install && yarn start
 ```
+### Run api
+Link: https://github.com/hpquynh/watch-api
 
 ## Description
 
