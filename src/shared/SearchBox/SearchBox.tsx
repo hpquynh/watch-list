@@ -6,14 +6,22 @@ import "./SearchBox.scss"
 const { Search } = Input
 
 export const SearchBox: React.FC<SearchBoxProps> = (props: SearchBoxProps): ReactElement => {
-  const { placeholder, onChange } = props
+  const { value, placeholder, onChange } = props
   return (
     <Space direction="vertical">
-      <Search placeholder={placeholder} size="large" allowClear onSearch={onChange} enterButton />
+      <Search
+        defaultValue={value}
+        placeholder={placeholder}
+        size="large"
+        allowClear
+        onSearch={onChange}
+        enterButton
+      />
     </Space>
   )
 }
 export type SearchBoxProps = {
+  value: string
   placeholder: string
   onChange: (value: string) => void
 }

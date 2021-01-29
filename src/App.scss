@@ -12,3 +12,10 @@ body,
   padding: $sp-2;
   background: $color-white;
 }
+
+.loading, .empty {
+  display: block;
+  text-align: center;
+  padding: $sp-1;
+  width: 100%;
+}

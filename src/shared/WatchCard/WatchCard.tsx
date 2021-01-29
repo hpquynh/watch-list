@@ -1,6 +1,5 @@
 import React, { ReactElement } from "react"
 import Card from "antd/lib/card"
-import Skeleton from "antd/lib/skeleton"
 import Image from "antd/lib/image"
 import Tag from "antd/lib/tag"
 import dayjs from "dayjs"
@@ -16,7 +15,7 @@ const cardStyle = {
 }
 
 export const WatchCard: React.FC<WatchInfoProps> = (props: WatchInfoProps): ReactElement => {
-  const { loading, data } = props
+  const { data } = props
   const { Meta } = Card
   return (
     <Card
@@ -25,22 +24,19 @@ export const WatchCard: React.FC<WatchInfoProps> = (props: WatchInfoProps): Reac
       hoverable
       cover={data?.image && <Image src={data.image} />}
     >
-      <Skeleton loading={loading} active>
-        {data && (
-          <div>
-            <div className="watch__header">
-              <Tag color={generateColor(data.brand)}>{data.brand}</Tag> <Meta title={data.name} />
-            </div>
-            <strong>{formatCurrency(data.price)}</strong>
-            <div>{dayjs(data.boughtAt).format(Constants.LONG_DATE_FORMAT)}</div>
+      {data && (
+        <div>
+          <div className="watch__header">
+            <Tag color={generateColor(data.brand)}>{data.brand}</Tag> <Meta title={data.name} />
           </div>
-        )}
-        <Meta />
-      </Skeleton>
+          <strong>{formatCurrency(data.price)}</strong>
+          <div>{dayjs(data.boughtAt).format(Constants.LONG_DATE_FORMAT)}</div>
+        </div>
+      )}
+      <Meta />
     </Card>
   )
 }
 export type WatchInfoProps = {
-  loading: boolean
   data?: Watch
 }
