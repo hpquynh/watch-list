@@ -1,0 +1,6 @@
+@import "./src/assets/styles/dimensionVariables";
+
+.ant-space {
+  width: $width-search-box;
+  max-width: 100%;
+}

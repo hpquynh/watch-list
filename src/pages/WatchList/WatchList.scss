@@ -1,0 +1,7 @@
+@import "./src/assets/styles/dimensionVariables";
+
+.watchList {
+  display: flex;
+  flex-flow: row wrap;
+  margin: $sp-2 -#{$sp-0};
+}

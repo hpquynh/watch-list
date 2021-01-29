@@ -4,7 +4,7 @@
       "es2017",
       "dom"
     ],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "noImplicitAny": false,
     "target": "es5",
     "allowJs": true, // Allow JavaScript files to be compiled
@@ -25,16 +25,8 @@
     "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
     "outDir": "dist",
     "paths": {
-      "@assets/*": [
-        "src/assets/*"
-      ],
-      "config/*": [
-        "src/config/*"
-      ],
+      "~/*": ["./*"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx"
-  ]
+  "include": ["src/**/*"]
 }

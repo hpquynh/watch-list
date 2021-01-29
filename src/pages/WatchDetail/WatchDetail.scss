@@ -1,0 +1,13 @@
+@import "./src/assets/styles/dimensionVariables";
+
+.modal {
+  &__detail {
+    margin-top: $sp-3;
+    &__header {
+      margin: $sp-0 0;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+    }
+  }
+}
