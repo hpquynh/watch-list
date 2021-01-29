@@ -1,0 +1,21 @@
+@import "./src/assets/styles/variables";
+
+body,
+#root,
+.layout,
+.siteLayoutContent {
+  height: 100%;
+}
+
+.siteLayoutContent {
+  min-height: $mh-main-content;
+  padding: $sp-2;
+  background: $color-white;
+}
+
+.loading, .empty {
+  display: block;
+  text-align: center;
+  padding: $sp-1;
+  width: 100%;
+}

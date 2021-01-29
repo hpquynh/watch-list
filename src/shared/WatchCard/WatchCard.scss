@@ -1,0 +1,11 @@
+@import "./src/assets/styles/dimensionVariables";
+
+.watch {
+  user-select: none;
+  &__header {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-bottom: $sp-0;
+  }
+}
